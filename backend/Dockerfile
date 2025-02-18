@@ -8,7 +8,7 @@ WORKDIR /var/www
 
 COPY ./Laravel /var/www
 
-RUN composer install --no-interaction --prefer-dist
+RUN composer install --no-interaction
 
 EXPOSE 8000
 
