@@ -33,7 +33,7 @@ services:
       context: ./frontend
     container_name: frontend_app
     ports:
-      - "3000:80"  # Exponemos el puerto 80 del contenedor Nginx al puerto 3000
+      - "3000:80" 
     depends_on:
       - backend
 
