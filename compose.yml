@@ -6,8 +6,6 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_DATABASE: practicalaravel
-    ports:
-      - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
 
