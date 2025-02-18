@@ -10,8 +10,6 @@ COPY ./Laravel /var/www
 
 RUN composer install --no-interaction
 
-EXPOSE 8000
-
 CMD sh -c "until nc -z -v -w30 db 3306; do echo 'Waiting for database...'; sleep 10; done && \
     php artisan migrate && \
     php artisan db:seed --class=SeederAlumno && \
